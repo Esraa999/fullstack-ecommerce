@@ -1,0 +1,40 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "outDir": "./out-tsc/spec",
+    "types": [
+      "jasmine",
+      "node"
+    ],
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "allowJs": true,
+    "checkJs": false,
+    "baseUrl": "./",
+    "paths": {
+      "@app/*": ["./src/app/*"],
+      "@environments/*": ["./src/environments/*"],
+      "@models/*": ["./src/app/models/*"]
+    }
+  },
+  "files": [
+    "src/test.ts",
+    "src/polyfills.ts"
+  ],
+  "include": [
+    "src/**/*.spec.ts",
+    "src/**/*.d.ts",
+    "src/app/app.spec.ts",  // Exact for app.spec.ts
+    "src/app/services/auth.service.spec.ts",  // Exact for auth spec
+    "src/app/services/**/*.spec.ts",  // Glob for services subfolder
+    "src/app/**/*.spec.ts",  // All app-level specs
+    "src/**/*.test.ts"  // Alternative pattern if any .test.ts
+  ],
+  "exclude": [
+    "src/**/*.e2e-spec.ts",
+    "**/*.po.ts",
+    "src/environments/environment.prod.ts"
+  ]
+}
