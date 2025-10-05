@@ -1,0 +1,25 @@
+# ===================
+# .NET / C# ignores
+# ===================
+bin/
+obj/
+.vs/
+*.user
+*.suo
+*.cache
+*.log
+*.vsix
+
+# ===================
+# Node / Angular ignores
+# ===================
+node_modules/
+dist/
+.angular/
+npm-debug.log
+yarn-error.log
+
+# ===================
+# Images / uploaded files
+# ===================
+wwwroot/UploadedImages/
