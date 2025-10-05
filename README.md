@@ -269,9 +269,8 @@ The backend is a secure Web API built with .NET 8+ and Entity Framework Core. It
 - **Integrate with Frontend**: Update Angular `apiUrl` to prod backend URL.
 - **Security**: Use secrets manager for JWT key; enable HTTPS-only.
 
-### License
-MIT License. For educational/assignment use. Ensure DB scripts and models match your skeleton.
+
 
 ---
 
-For questions or issues, refer to the troubleshooting sections or share logs/errors. To run the full app: Start backend → Seed DB → Run frontend → Register/Login → View products. Enjoy! 🚀
+
